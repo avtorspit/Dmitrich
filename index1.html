@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Дмитрич</title>
+    <style>
+        body{
+            background-color: #BC8F8F;
+        }
+        span{
+            text-align: center;
+        }
+        img{
+            text-align: left;
+            border: 4px inset burlywood;
+        }
+        .text{
+            margin-right:80px;
+            width: 40vw;
+            float: right;
+            padding-left:20px;
+            border: 5px dotted #FDF5E6;
+            text-align: center;
+            background-color: burlywood;
+        }
+        a{
+            color:#800080;
+            line-height: 2; /*интервал между заголовком и подчеркиванием, заголовком и границами старницы*/
+            text-decoration:none; /*убирает стандартное подчеркивание ссылки*/
+            cursor: pointer; /*изменяет вид курсора при наведении на блок*/
+            position:relative; /*устанавливает длину подчеркивания в зависимости от длины текстовой строки (иначе подчеркивается вся строка во весь экран)*/
+            font-size: 24pt;
+        }
+        a:after {
+            background-color: darkblue;
+            display: block;
+            content: "";
+            height: 2px;
+            width: 0px;
+            left:50%;
+            position:absolute;
+            -webkit-transition: width .3s ease-in-out;
+            -moz-transition: width .3s ease-in-out;
+            transition: width .3s ease-in-out;
+            -webkit-transform:translateX(-50%);
+            -moz-transform:translateX(-50%);
+            transform:translateX(-50%);
+        }
+        a:hover:after,
+        a:focus:after {
+            width: 100%;
+        }/*живое подчеркивание*/
+    </style>
+</head>
+<body>
+    <img src="img/999.jpg" width="560px" height="720px">
+    <div class="text">
+       <a href="https://vk.com/too_dark_fog"><i><b>Мой любимый одногруппник</b></i></a>
+        <p style="font-size: 18pt; color: #9400D3; font-family: Arial, Helvetica, sans-serif;">Дмитрич, ты словно из сказки пришёл,</p>
+            <p style="font-size: 18pt; color: #000080; font-family: fantasy;">Ты словно свет среди тёмного неба</p>
+            <p style="font-size: 18pt; color:red; font-family: monospace;">И словно луч света в немой темноте,</p>
+            <p style="font-size: 18pt; color:#00CED1; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Хороший, ответсвтенный парень</p>
+            <p style="font-size: 18pt; color: #808000; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Дмитрич, пусть жизнь твоя будет наполнена сосисками и смаженками</p>
+            <p style="font-size: 18pt; color: #B22222; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >Лишь света и радости, мира, добра,</p>
+            <p style="font-size: 18pt; color:#8B0000; font-family: Verdana, Geneva, Tahoma, sans-serif;">Будь счастлив, ведь тебе свет нам нести</p>
+            <p style="font-size: 18pt; color:#008000; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">На жизненном сложном и долгом пути!</p>
+            <img src="img/clown-27.gif" width="198px" height="190px">
+    </div>
+    <audio controls>
+        <source src="a828b9a9a0.mp3">
+    </audio>
+</body>
+</html>
